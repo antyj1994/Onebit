@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+
+.display-3{
+	font-size:40px;
+}
+
+.btn-login{
+	margin-top:1rem;
+}
+
+.jumbotron{
+	padding-bottom: 2rem;;
+}
