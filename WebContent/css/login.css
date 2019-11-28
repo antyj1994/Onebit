@@ -11,3 +11,11 @@
 .jumbotron{
 	padding-bottom: 2rem;;
 }
+
+.captcha-code-row{
+	margin-top: 1rem;
+}
+
+.error-message{
+	color: red;
+}

@@ -15,12 +15,10 @@ public class Home extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		HttpSession session = req.getSession();
-		System.out.println("current home param locale: " + req.getParameter("locale"));
 		
 		//SETTING LOCALIZATION PARAMETERS
 		if (req.getParameter("locale") != null) {
 			session.setAttribute("locale", req.getParameter("locale"));
-			System.out.println("current home session attribute locale: " + session.getAttribute("locale"));
 		}
 		
 		//SETTING REFERENCE TO ITSELF

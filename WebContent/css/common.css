@@ -89,6 +89,11 @@ nav{
 	color: #f7941d;
 }
 
+.login-label{
+	text-align: center;
+	margin-top: 1rem;
+}
+
 .nav-link{
 	color: #fff;
 }

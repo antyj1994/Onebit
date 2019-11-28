@@ -32,7 +32,7 @@ public class CheckLogout extends HttpServlet{
 		session.setAttribute("username", null);
 		session.setAttribute("logged", false);
 		req.setAttribute("loggato", false);
-		RequestDispatcher dispacher = req.getRequestDispatcher("Login.jsp");
+		RequestDispatcher dispacher = req.getRequestDispatcher("login.jsp");
 		dispacher.forward(req, resp);
 	}
 	

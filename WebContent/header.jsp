@@ -160,13 +160,14 @@
 				  			</div>
 			  			</c:if>
 			  			<c:if test="${loggato}">
-			  				<li>
 				  				<div class="row">
-				  					<p class="login-label"><b> ${messaggio} </b></p>
-				  					<hr class="my-4">
-				  					<a href="checkLogout" class="btn btn-danger" role="button"><fmt:message bundle="${messages}" key="btLogout"/></a>
+				  					<div class="col-6 align-self-center">
+				  						<p class="login-label"><b> ${messaggio} </b></p>
+				  					</div>
+				  					<div class="col-6 align-self-center">
+				  						<a href="checkLogout" class="btn btn-danger" role="button"><fmt:message bundle="${messages}" key="btLogout"/></a>
+				  					</div>
 				  				</div>
-			  				</li>
 			  			</c:if>
 					</nav>
 					
@@ -183,15 +184,15 @@
 				      				<li class="nav-item">
 				      				<div class="nav-item dropdown">
 								         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								           Profile
+								            <fmt:message bundle="${messages}" key="profile1"/>
 								         </a>
 									     <div class="dropdown-menu dropdown-menu-nav " aria-labelledby="navbarDropdown">
-									        <a class="dropdown-item dropdown-item-nav" href="#">Overview</a>
-									        <a class="dropdown-item dropdown-item-nav" href="#">Deposit</a>
-									        <a class="dropdown-item dropdown-item-nav" href="#">Withdraw</a>
+									        <a class="dropdown-item dropdown-item-nav" href="#"><fmt:message bundle="${messages}" key="profile2"/></a>
+									        <a class="dropdown-item dropdown-item-nav" href="#"><fmt:message bundle="${messages}" key="profile3"/></a>
+									        <a class="dropdown-item dropdown-item-nav" href="#"><fmt:message bundle="${messages}" key="profile4"/></a>
 									        <div class="dropdown-divider"></div>
-									        	<a class="dropdown-item dropdown-item-nav" href="#">Account</a>
-									        	<a class="dropdown-item dropdown-item-nav" href="#">Settings</a>
+									        	<a class="dropdown-item dropdown-item-nav" href="#"><fmt:message bundle="${messages}" key="profile5"/></a>
+									        	<a class="dropdown-item dropdown-item-nav" href="#"><fmt:message bundle="${messages}" key="profile6"/></a>
 									        </div>
 							   			 </div>
 								    </li>

@@ -1,8 +1,12 @@
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@page import="com.captcha.botdetect.web.servlet.Captcha"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@taglib prefix="botDetect" uri="https://captcha.com/java/jsp"%>
 
+<c:if test="${sessionScope.locale == null}">
+ 	<fmt:setLocale value="en" scope="session" />
+</c:if>
 <c:if test="${param['locale'] != null}">
  	<fmt:setLocale value="${param['locale']}" scope="session" />
 </c:if>
@@ -33,17 +37,45 @@
 			        	<div class="container">
 			          		<h1 class="display-3"><fmt:message bundle="${messages}" key="login1"/></h1>
 			          		<p><b><fmt:message bundle="${messages}" key="login2"/> </b></p>
+			          		
+			          		
 			          		<form method="post" action="checkLogin">
+			          			<c:if test="${passwordError}">
+									<p class="error-message"><b>Wrong Password</b></p>
+								</c:if>
+								<c:if test="${accountError}">
+									<p class="error-message"><b>Account not found</b></p>
+								</c:if>
 			  					<div class="form-row justify-content-center">
 			  						<div class="col-auto justify-content-around my-1">
-			    						<input name="username" type="text" class="form-control" id="summonerName" aria-describedby="emailHelp" placeholder="<fmt:message bundle="${messages}" key="login3"/>">
+			    						<input name="username" type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="<fmt:message bundle="${messages}" key="login3"/>">
 			  						</div>
 			  						<div class="col-auto justify-content-around my-1">
 			  							<input name="password" type="password" class="form-control" id="summonerName" aria-describedby="emailHelp" placeholder="<fmt:message bundle="${messages}" key="login4"/>">
 									</div>
 								</div>
-								<button name="submit" type="submit" class="btn btn-primary btn-login"><fmt:message bundle="${messages}" key="login1"/></button>
+								<c:if test="${captchaError}">
+										<p class="error-message"><b>Please complete the Captcha</b></p>
+									 </c:if>
+								<c:if test="${sessionScope.isCaptchaSolved == null}">
+								<div class="row justify-content-center captcha-code-row">
+									<%    // Adding BotDetect Captcha to the page
+										  Captcha captcha = Captcha.load(request, "loginCaptcha");
+										  captcha.setUserInputID("captchaCode");
+										
+										  String captchaHtml = captcha.getHtml();
+										  out.write(captchaHtml);
+									%>
+								</div>
+								<input id="captchaCode" type="text" name="captchaCode" />
+								</c:if>
+								
+								<div class="row justify-content-center">
+									<button name="submit" type="submit" class="btn btn-primary btn-login"><fmt:message bundle="${messages}" key="login1"/></button>
+								</div>
 							</form>
+							
+							
 			          		<p><b><fmt:message bundle="${messages}" key="login5"/></b></p>
 			          		<form method="post" action="register">
 			  					<div class="form-row justify-content-center">
@@ -72,6 +104,5 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>	
-	
 	</body>
-</>
+</html>
