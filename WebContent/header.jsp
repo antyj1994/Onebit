@@ -187,7 +187,7 @@
 								            <fmt:message bundle="${messages}" key="profile1"/>
 								         </a>
 									     <div class="dropdown-menu dropdown-menu-nav " aria-labelledby="navbarDropdown">
-									        <a class="dropdown-item dropdown-item-nav" href="#"><fmt:message bundle="${messages}" key="profile2"/></a>
+									        <a class="dropdown-item dropdown-item-nav" href="overview"><fmt:message bundle="${messages}" key="profile2"/></a>
 									        <a class="dropdown-item dropdown-item-nav" href="#"><fmt:message bundle="${messages}" key="profile3"/></a>
 									        <a class="dropdown-item dropdown-item-nav" href="#"><fmt:message bundle="${messages}" key="profile4"/></a>
 									        <div class="dropdown-divider"></div>
@@ -198,7 +198,7 @@
 								    </li>
 							    </c:if>
 			      				<li class="nav-item">
-			       					<a class="nav-link" href="home"><fmt:message bundle="${messages}" key="nav1"/></a>
+			       					<a class="nav-link" href="prices"><fmt:message bundle="${messages}" key="nav1"/></a>
 			      				</li>
 			      				<li class="nav-item">
 			       					<a class="nav-link" href="home"><fmt:message bundle="${messages}" key="nav2"/></a>

@@ -9,7 +9,8 @@
 }
 
 .jumbotron{
-	padding-bottom: 2rem;;
+	padding-bottom: 2rem;
+	font-weight: bold;
 }
 
 .captcha-code-row{
@@ -18,4 +19,10 @@
 
 .error-message{
 	color: red;
+}
+
+.recovery-message,
+.recovery-message:hover{
+	font-size: 17px;
+	color: #00bfff;
 }

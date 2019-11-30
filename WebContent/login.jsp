@@ -1,7 +1,8 @@
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@page import="com.captcha.botdetect.web.servlet.Captcha"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@page import="com.captcha.botdetect.web.servlet.Captcha"%>
 <%@taglib prefix="botDetect" uri="https://captcha.com/java/jsp"%>
 
 <c:if test="${sessionScope.locale == null}">
@@ -26,6 +27,7 @@
 	</head>
 	
 	<body>
+	
 		<div class="bg">
 			
 			<div class="container-fluid body-container">
@@ -54,9 +56,12 @@
 			  							<input name="password" type="password" class="form-control" id="summonerName" aria-describedby="emailHelp" placeholder="<fmt:message bundle="${messages}" key="login4"/>">
 									</div>
 								</div>
+								<div>
+									<a class="recovery-message" href="#">Lost your password?</a>
+								</div>
 								<c:if test="${captchaError}">
 										<p class="error-message"><b>Please complete the Captcha</b></p>
-									 </c:if>
+								</c:if>
 								<c:if test="${sessionScope.isCaptchaSolved == null}">
 								<div class="row justify-content-center captcha-code-row">
 									<%    // Adding BotDetect Captcha to the page
@@ -104,5 +109,7 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>	
+	
 	</body>
+	
 </html>

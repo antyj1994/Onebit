@@ -1,0 +1,141 @@
+@charset "ISO-8859-1";
+
+.profile-container{
+	padding-top: 0rem;
+	padding-bottom:0rem;
+	margin-top: 1rem;
+	margin-bottom: -1rem;
+	background-color: transparent;
+	color: #fff;
+	border-radius: 2rem;
+}
+
+.card{
+	margin-bottom: 1rem;
+	background-color: #f7941d;
+	border-color: #ec8010;
+	border-radius: 2rem;
+	border-width: 1.5px;
+}
+
+.card:hover{
+	border-color: #000;
+}
+
+.card-body{
+	text-align: center;
+	padding-right: 2.5rem;
+	padding-left: 2.5rem;
+	padding-bottom: 0.2rem;
+}
+
+.card-header, .card-footer{
+	background-color: #ec8010;
+}
+
+.card-header{
+	margin-bottom: -1rem;
+	padding-bottom: 0rem;
+	margin-top: 0rem;
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+	border-bottom-left-radius: 0rem;
+	border-bottom-right-radius: 0rem;
+}
+
+.card-footer{
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	border-top-left-radius: 0rem;
+	border-top-right-radius: 0rem;
+}
+
+.card-header:first-child{
+    border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+	border-bottom-left-radius: 0rem;
+	border-bottom-right-radius: 0rem;
+}
+.card-footer:last-child{
+	border-top-left-radius: 0rem;
+	border-top-right-radius: 0rem;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+} 
+
+.card-text-head{
+	border-radius: 2rem;
+}
+
+.card-title{
+	color:#fff;
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+.card-text-plan0{
+	border-radius: 1rem;
+	background-color: #fff;
+	color: #cd7f32; 
+	font-size: larger;
+	font-weight: 600;
+}
+
+.card-text-plan1{
+	border-radius: 1rem;
+	background-color: #fff;
+	color: #888; 
+	font-size: larger;
+	font-weight: 600;
+}
+
+.card-text-plan2{
+	border-radius: 1rem;
+	background-color: #fff;
+	color: #f9a602; 
+	font-size: larger;
+	font-weight: 600;
+}
+
+.card-text-plan3{
+	border-radius: 1rem;
+	background-color: #fff;
+	color: #000; 
+	font-size: larger;
+	font-weight: 600;
+}
+
+.card-text-cost{
+	font-weight: bold;
+	font-size: xx-large;
+	color: #f8ff00;
+}
+
+.card-text-rate{
+	font-size:x-large;
+	margin-bottom: 1rem;
+}
+
+.card-text-time{
+	margin-bottom: 0rem;
+}
+
+.card-text-type{
+	margin-bottom: 0rem;
+}
+
+.btn1-col{
+	margin-bottom: 1rem;
+}
+
+.btn{
+	background-color: #ec8010;
+	color: #fff;
+	border-color: #ccc;
+	border-radius: 0.7rem;
+}
+
+.btn:hover{
+	background-color: #f7941d;
+	border-color: #fff;
+}

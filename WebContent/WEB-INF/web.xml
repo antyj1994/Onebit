@@ -15,12 +15,21 @@
 	</welcome-file-list>
 	
 	<servlet>
-		<servlet-name>ExpandSummonerServlet</servlet-name>
-		<servlet-class>controller.ExpandSummoner</servlet-class>
+		<servlet-name>OverviewServlet</servlet-name>
+		<servlet-class>controller.Overview</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>ExpandSummonerServlet</servlet-name>
-		<url-pattern>/expandSummoner</url-pattern>
+		<servlet-name>OverviewServlet</servlet-name>
+		<url-pattern>/overview</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PricesServlet</servlet-name>
+		<servlet-class>controller.Prices</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PricesServlet</servlet-name>
+		<url-pattern>/prices</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>

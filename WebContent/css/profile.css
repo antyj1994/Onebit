@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+
+.profile-container{
+	padding-top: 1rem;
+	padding-bottom:1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	background-color: #00bfff;
+	color: #fff;
+	border-radius: 2rem;
+}
