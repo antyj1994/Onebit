@@ -33,19 +33,25 @@
 				<jsp:include page="header.jsp" /> 
 				
 				<div class="container-fluid profile-container">
-					<ul class="nav nav-pills">
+					<ul class="nav nav-pills justify-content-center">
 						<li class="active">
-							<a href="#1a" data-toggle="tab">Bitcoin</a>
+							<a href="#1a" data-toggle="tab" class="pills-item pills-item-btc">BTC</a>
 						</li>
 						<li class="active">
-							<a href="#2a" data-toggle="tab">Ethereum</a>
+							<a href="#2a" data-toggle="tab" class="pills-item pills-item-eth">ETH</a>
+						</li>
+						<li class="active">
+							<a href="#3a" data-toggle="tab" class="pills-item pills-item-bch">BCH</a>
+						</li>
+						<li class="active">
+							<a href="#4a" data-toggle="tab" class="pills-item pills-item-ltc">LTC</a>
 						</li>
 					</ul>
 					<div class="tab-content clearfix">
 				    	<div class="tab-pane active" id="1a">
 			          		<div class="container prices-container">
 								<div class="row justify-content-between">
-									<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="col-sm-6 col-md-6 col-xl-3">
 								        <div class="card text-center">
 								        	<div class="card-header">
 								        		<p class="card-text-head">Available</p>
@@ -68,7 +74,7 @@
 								        	</div>
 								    	</div>
 									</div>
-								    <div class="col-sm-6 col-md-6 col-lg-3">
+								    <div class="col-sm-6 col-md-6 col-xl-3">
 								        <div class="card text-center">
 								        	<div class="card-header">
 								        		<p class="card-text-head">Available</p>
@@ -91,7 +97,7 @@
 								        	</div>
 								    	</div>
 									</div>
-									<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="col-sm-6 col-md-6 col-xl-3">
 								        <div class="card text-center">
 								        	<div class="card-header">
 								        		<p class="card-text-head">Available</p>
@@ -114,7 +120,7 @@
 								        	</div>
 								    	</div>
 									</div>
-									<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="col-sm-6 col-md-6 col-xl-3">
 								        <div class="card text-center">
 								        	<div class="card-header">
 								        		<p class="card-text-head">Available</p>
@@ -146,94 +152,94 @@
 						<div class="tab-pane" id="2a">
 			          		<div class="container prices-container">
 								<div class="row justify-content-between">
-									<div class="col-sm-6 col-md-6 col-lg-3">
-								        <div class="card text-center">
-								        	<div class="card-header">
-								        		<p class="card-text-head">Available</p>
+									<div class="col-sm-6 col-md-6 col-xl-3">
+								        <div class="card card-eth text-center">
+								        	<div class="card-header card-header-eth">
+								        		<p class="card-text-head card-text-head-eth">Available</p>
 								        	</div>
-								      		<div class="card-body">
-								        		<h5 class="card-title">Ethereum</h5>
-								        		<p class="card-text card-text-plan0">Bronze</p>
-								        		<p class="card-text card-text-cost">$10</p>
-								        		<p class="card-text card-text-rate">1 TH/s</p>
-								        		<p class="card-text card-text-time">4 Months Plan</p>
-								        		<p class="card-text card-text-type">SHA-256</p>
+								      		<div class="card-body card-body-eth">
+								        		<h5 class="card-title card-title-eth">Ethereum</h5>
+								        		<p class="card-text card-text-plan0 card-text-plan0-eth">Bronze</p>
+								        		<p class="card-text card-text-cost card-text-cost-eth">$10</p>
+								        		<p class="card-text card-text-rate card-text-rate-eth">1 TH/s</p>
+								        		<p class="card-text card-text-time card-text-time-eth">4 Months Plan</p>
+								        		<p class="card-text card-text-type card-text-type-eth">SHA-256</p>
 								      		</div>
-								      		<div class="card-footer">
+								      		<div class="card-footer card-footer-eth">
 								        		<div class="col-12 btn1-col">
-								        			<a href="#" class="btn btn-primary">Purchase</a>
+								        			<a href="#" class="btn btn-primary btn-eth">Purchase</a>
 								      			</div>
 								      			<div class="col-12">
-								        			<a href="#" class="btn btn-primary">Details</a>
+								        			<a href="#" class="btn btn-primary btn-eth">Details</a>
 								      			</div>
 								        	</div>
 								    	</div>
 									</div>
-								    <div class="col-sm-6 col-md-6 col-lg-3">
-								        <div class="card text-center">
-								        	<div class="card-header">
-								        		<p class="card-text-head">Available</p>
+								    <div class="col-sm-6 col-md-6 col-xl-3">
+								        <div class="card card-eth text-center">
+								        	<div class="card-header card-header-eth">
+								        		<p class="card-text-head card-text-head-eth">Available</p>
 								        	</div>
-								      		<div class="card-body">
-								        		<h5 class="card-title">Ethereum</h5>
-								        		<p class="card-text card-text-plan1">Silver</p>
-								        		<p class="card-text card-text-cost">$25</p>
-								        		<p class="card-text card-text-rate">5 TH/s</p>
-								        		<p class="card-text card-text-time">2 Months Plan</p>
-								        		<p class="card-text card-text-type">SHA-256</p>
+								      		<div class="card-body card-body-eth">
+								        		<h5 class="card-title card-title-eth">Ethereum</h5>
+								        		<p class="card-text card-text-plan1 card-text-plan1-eth">Silver</p>
+								        		<p class="card-text card-text-cost card-text-cost-eth">$10</p>
+								        		<p class="card-text card-text-rate card-text-rate-eth">1 TH/s</p>
+								        		<p class="card-text card-text-time card-text-time-eth">4 Months Plan</p>
+								        		<p class="card-text card-text-type card-text-type-eth">SHA-256</p>
 								      		</div>
-								      		<div class="card-footer">
+								      		<div class="card-footer card-footer-eth">
 								        		<div class="col-12 btn1-col">
-								        			<a href="#" class="btn btn-primary">Purchase</a>
+								        			<a href="#" class="btn btn-primary btn-eth">Purchase</a>
 								      			</div>
 								      			<div class="col-12">
-								        			<a href="#" class="btn btn-primary">Details</a>
+								        			<a href="#" class="btn btn-primary btn-eth">Details</a>
 								      			</div>
 								        	</div>
 								    	</div>
 									</div>
-									<div class="col-sm-6 col-md-6 col-lg-3">
-								        <div class="card text-center">
-								        	<div class="card-header">
-								        		<p class="card-text-head">Available</p>
+									<div class="col-sm-6 col-md-6 col-xl-3">
+								        <div class="card card-eth text-center">
+								        	<div class="card-header card-header-eth">
+								        		<p class="card-text-head card-text-head-eth">Available</p>
 								        	</div>
-								      		<div class="card-body">
-								        		<h5 class="card-title">Ethereum</h5>
-								        		<p class="card-text card-text-plan2">Gold</p>
-								        		<p class="card-text card-text-cost">$100</p>
-								        		<p class="card-text card-text-rate">25 TH/s</p>
-								        		<p class="card-text card-text-time">2 Months Plan</p>
-								        		<p class="card-text card-text-type">SHA-256</p>
+								      		<div class="card-body card-body-eth">
+								        		<h5 class="card-title card-title-eth">Ethereum</h5>
+								        		<p class="card-text card-text-plan2 card-text-plan2-eth">Gold</p>
+								        		<p class="card-text card-text-cost card-text-cost-eth">$100</p>
+								        		<p class="card-text card-text-rate card-text-rate-eth">10 TH/s</p>
+								        		<p class="card-text card-text-time card-text-time-eth">4 Months Plan</p>
+								        		<p class="card-text card-text-type card-text-type-eth">SHA-256</p>
 								      		</div>
-								      		<div class="card-footer">
+								      		<div class="card-footer card-footer-eth">
 								        		<div class="col-12 btn1-col">
-								        			<a href="#" class="btn btn-primary">Purchase</a>
+								        			<a href="#" class="btn btn-primary btn-eth">Purchase</a>
 								      			</div>
 								      			<div class="col-12">
-								        			<a href="#" class="btn btn-primary">Details</a>
+								        			<a href="#" class="btn btn-primary btn-eth">Details</a>
 								      			</div>
 								        	</div>
 								    	</div>
 									</div>
-									<div class="col-sm-6 col-md-6 col-lg-3">
-								        <div class="card text-center">
-								        	<div class="card-header">
-								        		<p class="card-text-head">Available</p>
+									<div class="col-sm-6 col-md-6 col-xl-3">
+								        <div class="card card-eth text-center">
+								        	<div class="card-header card-header-eth">
+								        		<p class="card-text-head card-text-head-eth">Available</p>
 								        	</div>
-								      		<div class="card-body">
-								        		<h5 class="card-title">Ethereum</h5>
-								        		<p class="card-text card-text-plan3">Black</p>
-								        		<p class="card-text card-text-cost">$200</p>
-								        		<p class="card-text card-text-rate">100 TH/s</p>
-								        		<p class="card-text card-text-time">1 Month Plan</p>
-								        		<p class="card-text card-text-type">SHA-256</p>
+								      		<div class="card-body card-body-eth">
+								        		<h5 class="card-title card-title-eth">Ethereum</h5>
+								        		<p class="card-text card-text-plan3 card-text-plan3-eth">Black</p>
+								        		<p class="card-text card-text-cost card-text-cost-eth">$1000</p>
+								        		<p class="card-text card-text-rate card-text-rate-eth">100 TH/s</p>
+								        		<p class="card-text card-text-time card-text-time-eth">4 Months Plan</p>
+								        		<p class="card-text card-text-type card-text-type-eth">SHA-256</p>
 								      		</div>
-								      		<div class="card-footer">
+								      		<div class="card-footer card-footer-eth">
 								        		<div class="col-12 btn1-col">
-								        			<a href="#" class="btn btn-primary">Purchase</a>
+								        			<a href="#" class="btn btn-primary btn-eth">Purchase</a>
 								      			</div>
 								      			<div class="col-12">
-								        			<a href="#" class="btn btn-primary">Details</a>
+								        			<a href="#" class="btn btn-primary btn-eth">Details</a>
 								      			</div>
 								        	</div>
 								    	</div>
