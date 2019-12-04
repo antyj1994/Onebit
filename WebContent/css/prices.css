@@ -9,7 +9,7 @@ h5{
 	margin-top: 3rem;
 	margin-bottom: 0rem;
 	background-color: transparent;
-	color: #fff;
+	color: #888;
 	border-radius: 2rem;
 }
 
@@ -30,26 +30,23 @@ h5{
 	border-radius: 2rem;
 	font-size: 23px;
 	font-weight: bold;
+	color: #f5f5f1;
 }
 
 .pills-item-btc{
-	background-color: #f7941d;
-	color: #eaedee;
+	background-color: #f2a900;
 }
 
 .pills-item-eth{
-	background-color: #3c3c3d;
-	color: #eaedee;
+	background-color: #c99d66;
 }
 
 .pills-item-bch{
 	background-color: #ec8010;
-	color: #eaedee;
 }
 
 .pills-item-ltc{
 	background-color: #00aeff;
-	color: #eaedee; 
 }
 
 .pills-item:hover{
@@ -57,21 +54,90 @@ h5{
 	color: #fff;
 }
 
+.btc{
+	color: #f2a900;
+}
+
+.eth{
+	color: #c99d66;
+}
+
+.bch{
+	color: #ec8010;
+}
+
+.ltc{
+	color: #00aeff;
+}
+
 .card{
 	margin-bottom: 1rem;
-	background-color: #f7941d;
-	border-color: #ec8010;
 	border-radius: 2rem;
 	border-width: 1.5px;
 }
 
-.card-eth{
-	background-color: #ecf0f1;
-	border-color: #3c3c3d;
+.card-bronze{
+	border-color: #cd7f32;
+	background-color: #fff5cf;
+	color: #cd7f32;
+}
+
+.card-bronze > .card-header, .card-bronze > .card-footer{
+	background-color: #cd7f32;
+}
+
+.card-bronze > .card-footer > div > .btn {
+	background-color: #cd7f32;
+	color: #fff;
+}
+
+.card-silver{
+	border-color: #aaa9ad;
+	background-color: #f5f5f1;
+	color: #aaa9ad;
+}
+
+.card-silver > .card-header, .card-silver > .card-footer{
+	background-color: #aaa9ad;
+}
+
+.card-silver > .card-footer > div > .btn {
+	background-color: #aaa9ad;
+	color: #fff;
+}
+
+.card-gold{
+	border-color: #ffbf00;
+	background-color: #ffffda;
+	color: #ffbf00;
+}
+
+.card-gold > .card-header, .card-gold > .card-footer{
+	background-color: #ffbf00;
+}
+
+.card-gold > .card-footer > div > .btn {
+	background-color: #ffbf00;
+	color: #fff;
+}
+
+.card-black{
+	border-color: #000;
+	background-color: #e1efe1;
+	color: #333;
+}
+
+.card-black > .card-header, .card-black > .card-footer{
+	background-color: #000;
+}
+
+.card-black > .card-footer > div > .btn {
+	background-color: #000;
+	color: #fff;
 }
 
 .card:hover{
-	border-color: #000;
+	border-color: transparent;
 }
 
 .card-eth:hover{
@@ -83,15 +149,6 @@ h5{
 	padding-right: 2.5rem;
 	padding-left: 2.5rem;
 	padding-bottom: 0.2rem;
-}
-
-
-.card-header, .card-footer{
-	background-color: #ec8010;
-}
-
-.card-header-eth, .card-footer-eth{
-	background-color: #3c3c3d;
 }
 
 .card-header{
@@ -127,70 +184,35 @@ h5{
 } 
 
 .card-text-head{
-	border-radius: 2rem;
+	color: efe;
 }
 
 .card-title{
-	color:#fff;
 	font-size: xx-large;
 	font-weight: bold;
 }
 
-.card-title-eth{
-	color:#3c3c3d;
-	font-size: xx-large;
+.card-title-bch{
+	font-size: 27px;
 	font-weight: bold;
+	margin-bottom: 0.75rem;
+	margin-top: 0.38rem;
 }
 
-.card-text-plan0{
-	border-radius: 1rem;
-	background-color: #fff;
-	color: #cd7f32; 
-	font-size: larger;
-	font-weight: 600;
-}
-
-.card-text-plan1{
-	border-radius: 1rem;
-	background-color: #fff;
-	color: #888; 
-	font-size: larger;
-	font-weight: 600;
-}
-
-.card-text-plan2{
-	border-radius: 1rem;
-	background-color: #fff;
-	color: #f9a602; 
-	font-size: larger;
-	font-weight: 600;
-}
-
-.card-text-plan3{
-	border-radius: 1rem;
-	background-color: #fff;
-	color: #000; 
+.card-text-plan{ 
 	font-size: larger;
 	font-weight: 600;
 }
 
 .card-text-cost{
+	color: #6d6d6b;
 	font-weight: bold;
 	font-size: xx-large;
-	color: #f8ff00;
-}
-
-.card-text-cost-eth{
-	color: #c99d66;
 }
 
 .card-text-rate{
 	font-size:x-large;
-	margin-bottom: 1rem;
-}
-
-.card-text-rate-eth{
-	color: #3c3c3d;
+	margin-bottom: 0.5rem;
 }
 
 .card-text-time{
@@ -214,16 +236,10 @@ h5{
 }
 
 .btn{
-	background-color: #ec8010;
-	color: #fff;
+	background-color: #fff;
+	color: #888;
 	border-color: #ccc;
 	border-radius: 0.7rem;
-}
-
-.btn-eth{
-	background-color: #ecf0f1;
-	color: #3c3c3d;
-	border-color: #3c3c3d;
 }
 
 .btn:hover{
